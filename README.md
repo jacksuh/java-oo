@@ -1,7 +1,6 @@
 #Java OO
 
-Objective of the project to put into practice<p>
-the concepts of object orientation.
+Objective of the project to put into practice the concepts of object orientation.
 
 *Defining behavior.<p>
 
@@ -10,3 +9,4 @@ the concepts of object orientation.
 *Package and visibility.<p>
 
 *builders and members and statisticians.
+****
