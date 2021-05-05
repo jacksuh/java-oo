@@ -8,5 +8,4 @@ Objective of the project to put into practice the concepts of object orientation
 
 *Package and visibility.<p>
 
-*builders and members and statisticians.
-****
+*Builders and members and statisticians.
