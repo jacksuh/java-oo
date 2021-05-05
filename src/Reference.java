@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class reference {
+public class Reference {
 
     public static void main(String[] args) {
         Account firstAccount = new Account();
@@ -22,3 +22,4 @@ public class reference {
 
     }
 }
+
