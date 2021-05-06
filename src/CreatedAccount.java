@@ -1,23 +1,23 @@
 public class CreatedAccount {
     public static void main(String[] args) {
         Account firstAccount = new Account();
-        firstAccount.balance = 200;
-        System.out.println(firstAccount.balance);
+        firstAccount.setBalance(200);
+        System.out.println(firstAccount.getBalance());
 
         Account secondAccount = new Account();
-        secondAccount.balance = 50;
+        secondAccount.setBalance(50);
 
 
-        System.out.println("Firt Account: " + firstAccount.balance);
-        System.out.println("Second Account: "  + secondAccount.balance);
+        System.out.println("Firt Account: " + firstAccount.getBalance());
+        System.out.println("Second Account: "  + secondAccount.getBalance());
 
-        System.out.println(firstAccount.agency);
-        System.out.println(firstAccount.number);
+        System.out.println(firstAccount.getAgency());
+        System.out.println(firstAccount.getNumber());
 
-        System.out.println(secondAccount.agency);
+        System.out.println(secondAccount.getAgency());
 
-        secondAccount.agency = 146;
-        System.out.println("Agency second Account: " + secondAccount.agency);
+        secondAccount.setAgency(146);
+        System.out.println("Agency second Account: " + secondAccount.getAgency());
 
         if(firstAccount == secondAccount){
             System.out.println("It's the same account");
