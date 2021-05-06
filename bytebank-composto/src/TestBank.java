@@ -9,6 +9,11 @@ public class TestBank {
         Account  accountJackson = new Account(123, 456);
         accountJackson.deposit(100);
 
+        Account account2 = new Account(1337, 16549);
+        Account account3 = new Account(2112, 14660);
+
+        System.out.println(accountJackson.getTotal());
+
         accountJackson.setHolder(jackson);
         System.out.println(accountJackson.getHolder().getNome());
     }

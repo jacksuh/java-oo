@@ -4,8 +4,14 @@ public class Account {
     private int agency;
     private int number;
     private Client holder;
+    private static int total;
+
+    public int getTotal() {
+        return Account.total;
+    }
 
     public void deposit(double value){
+
         this.balance = this.balance + value;
     }
 
@@ -60,6 +66,7 @@ public class Account {
     }
 
     public Account( int agency, int number) {
+        Account.total ++;
         this.agency = agency;
         this.number = number;
         System.out.println("estou criando uma conta: " + this.number);
