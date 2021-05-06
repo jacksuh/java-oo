@@ -6,7 +6,7 @@ public class TestBank {
         jackson.setProfissao("Developer");
 
 
-        Account  accountJackson = new Account();
+        Account  accountJackson = new Account(123, 456);
         accountJackson.deposit(100);
 
         accountJackson.setHolder(jackson);

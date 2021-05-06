@@ -58,4 +58,10 @@ public class Account {
     public void setHolder(Client holder) {
         this.holder = holder;
     }
+
+    public Account( int agency, int number) {
+        this.agency = agency;
+        this.number = number;
+        System.out.println("estou criando uma conta: " + this.number);
+    }
 }
