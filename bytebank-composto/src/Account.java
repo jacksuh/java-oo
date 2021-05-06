@@ -1,9 +1,9 @@
 public class Account {
 
-    double balance;
-    int agency;
-    int number;
-    Client holder;
+    private double balance;
+    private int agency;
+    private int number;
+    private Client holder;
 
     public void deposit(double value){
         this.balance = this.balance + value;
@@ -27,4 +27,35 @@ public class Account {
         return false;
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public int getAgency() {
+        return agency;
+    }
+
+    public void setAgency(int agency) {
+        this.agency = agency;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Client getHolder() {
+        return holder;
+    }
+
+    public void setHolder(Client holder) {
+        this.holder = holder;
+    }
 }
