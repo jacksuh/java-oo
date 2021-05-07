@@ -7,8 +7,15 @@ public class CurrentAccount extends Account{
     }
 
     @Override
+    public void deposit(double value) {
+        this.balance += value;
+    }
+
+    @Override
     public boolean withdraw(double value) {
         double withdraw = value + 0.2;
         return super.withdraw(withdraw);
     }
+
+
 }
