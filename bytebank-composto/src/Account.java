@@ -7,7 +7,7 @@ public class Account {
     private static int total;
 
     public int getTotal() {
-        return Account.total;
+        return Account.total = 0;
     }
 
     public void deposit(double value){
