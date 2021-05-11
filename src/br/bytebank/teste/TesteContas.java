@@ -1,8 +1,8 @@
-package teste;
+package br.bytebank.teste;
 
-import modelo.ContaCorrente;
-import modelo.ContaPoupanca;
-import modelo.SaldoInsuficienteException;
+import br.bytebank.modelo.ContaCorrente;
+import br.bytebank.modelo.ContaPoupanca;
+import br.bytebank.modelo.SaldoInsuficienteException;
 
 public class TesteContas {
 
