@@ -1,6 +1,6 @@
+package modelo;
 
-
-//new ContaCorrente()
+//new modelo.ContaCorrente()
 public class ContaCorrente extends Conta implements Tributavel {
 
 	public ContaCorrente(int agencia, int numero) {
