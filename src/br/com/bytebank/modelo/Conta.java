@@ -1,5 +1,10 @@
 package br.com.bytebank.modelo;
 
+/**
+ * Autor: Jackson
+ * Moldura da conta.
+ */
+
 public abstract class Conta {
 
     protected double saldo;

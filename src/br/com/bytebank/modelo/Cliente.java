@@ -1,5 +1,9 @@
 package br.com.bytebank.modelo;
 
+/**
+ * Autor: Jackson
+ * Classe Cliente.
+ */
 public class Cliente {
 
     private String nome;
