@@ -1,4 +1,4 @@
-package br.bytebank.modelo;
+package br.com.bytebank.modelo;
 
 //new br.bytebank.modelo.ContaCorrente()
 public class ContaCorrente extends Conta implements Tributavel {
