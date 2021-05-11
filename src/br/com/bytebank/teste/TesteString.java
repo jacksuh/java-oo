@@ -12,5 +12,15 @@ public class TesteString {
 
         System.out.println(nome);
         System.out.println(outra);
+
+        //trim tirar o espaço
+        String vazio ="    Alura    ";
+
+        String outroVazio = vazio.trim();
+
+        System.out.println(vazio.isEmpty());
+
+        //Constains verifica se existe
+        System.out.println(outroVazio.contains("Alu"));
     }
 }
