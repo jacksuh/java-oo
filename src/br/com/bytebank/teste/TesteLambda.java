@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class TesteComparacao {
+public class TesteLambda {
     public static void main(String[] args) {
 
 
@@ -58,28 +58,36 @@ public class TesteComparacao {
             System.out.println(conta + ", " + conta.getTitular().getNome());
         }
 
-        lista.sort(comparator);
+        lista.sort( (c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()) );
+
+        lista.forEach( (conta) -> System.out.println(conta + ", " + conta.getTitular().getNome()));
 
     }
 
+    Comparator<Conta> comp = (Conta c1, Conta c2) -> {
+        String nomeC1 = c1.getTitular().getNome();
+        String nomeC2 = c2.getTitular().getNome();
+        return nomeC1.compareTo(nomeC2);
+    };
+
 }
 
-//class TitularDaContaComparator implements Comparator<Conta> {
-   // @Override
-    //public int compare(Conta c1, Conta c2) {
+class TitularDaContaComparator implements Comparator<Conta> {
+    @Override
+    public int compare(Conta c1, Conta c2) {
 
-      //  String nomeC1 = c1.getTitular().getNome();
-       // String nomeC2 = c2.getTitular().getNome();
-        //return nomeC1.compareTo(nomeC2);
-    //}
-//}
+        String nomeC1 = c1.getTitular().getNome();
+        String nomeC2 = c2.getTitular().getNome();
+        return nomeC1.compareTo(nomeC2);
+    }
+}
 
-//class NumeroDaContaComparator implements Comparator<Conta> {
+class NumeroDaContaComparator implements Comparator<Conta> {
 
-   // @Override
-  //  public int compare(Conta c1, Conta c2) {
+    @Override
+    public int compare(Conta c1, Conta c2) {
 
-    //    return Integer.compare(c1.getNumero(), c2.getNumero());
+        return Integer.compare(c1.getNumero(), c2.getNumero());
 
 //                        return c1.getNumero() - c2.getNumero();
 //
@@ -92,5 +100,5 @@ public class TesteComparacao {
 //                }
 //
 //            return 0;
-//    }
-//}
+    }
+}
